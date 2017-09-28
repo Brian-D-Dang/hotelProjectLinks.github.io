@@ -58,16 +58,18 @@
     <div id="floorOne">
       <center>Floor 1</center>
       <input type="text" id="fOne">
-      <button onClick="floorA()" id="invOne">Click</button>
+      <button onClick="floorA()" id="invOne">Reserve</button>
       <ol>
       </ol>
+      <br>
+      <button onClick="removeA()" id="re">Remove</button>
       <p id="dis"></p>
     </div>
     <!-- floor one -->
     <div id="floorTwo">
       <center>Floor 2</center>
       <input type="text" id="fTwo">
-      <button onClick="floorB()" id="invTwo">Click</button>
+      <button onClick="floorB()" id="invTwo">Reserve</button>
       <ol>
       </ol>
       <p id="dis2"></p>
@@ -76,7 +78,7 @@
     <div id="floorThree">
       <center>Floor 3</center>
       <input type="text" id="fThree">
-      <button onClick="floorC()" id="invThree">Click</button>
+      <button onClick="floorC()" id="invThree">Reserve</button>
       <ol>
       </ol>
       <p id="dis3"></p>
@@ -85,7 +87,7 @@
     <div id="floorFour">
       <center>Floor 4</center>
       <input type="text" id="fFour">
-      <button onClick="floorD()" id="invFour">Click</button>
+      <button onClick="floorD()" id="invFour">Reserve</button>
       <ol>
       </ol>
       <p id="dis4"></p>
@@ -122,6 +124,14 @@
        }
        //else there isn't anymore room
      }
+     
+     function removeA(){
+      var UserInput = document.getElementById('fOne').value;
+      var Nu = document.getElementsByTagName('li')[UserInput];
+      var removeNu = Nu.parentNode;
+      removeNu.removeChild(Nu);
+     }
+     
      //floor one with the code to display names and max people in a floor
      function floorB(){
        var x =document.getElementById("fTwo").value;
