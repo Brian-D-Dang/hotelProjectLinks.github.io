@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MrSkam's Palace</title>
+    <style>
+      body {
+        background-image:url("https://i.ytimg.com/vi/5QB3GGiLdLA/maxresdefault.jpg");
+        background-size:cover;
+      }
+      /*background image*/
+      .titleColor {
+        color:purple;
+      }
+      /*text that are titles*/
+      #floorOne {
+        background-color:rgba(0, 138, 174, 0.7);
+        color:purple;
+        width:400px;
+        height:200px;
+        left:300px;
+        position:absolute;
+      }
+      #floorTwo{
+        background-color:rgba(0, 138, 174, 0.7);
+        color:purple;
+        width:400px;
+        height:200px;
+        right:300px;
+        position:absolute;
+      }
+      #floorThree{
+        position:absolute;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:purple;
+        width:400px;
+        height:200px;
+        left:300px;
+        bottom:100px;
+      }
+      #floorFour{
+        position:absolute;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:purple;
+        width:400px;
+        height:200px;
+        float:right;
+        right:300px;
+        bottom:100px;
+      }
+      #invOne{
+        float:left;
+        color:green;
+      }
+      #re{
+        float:left;
+        color:red;
+      }
+    </style>
+  </head>
+  
+  
+  
+  <body>
+    <center><h1 class="titleColor">MrSkam's Palace</h1></center>
+    <!-- title of the page -->
+    <div id="floorOne">
+      <center>Floor 1</center>
+      <input type="text" id="fOne">
+      <button onClick="floorA()" id="invOne">Reserve</button>
+      <button onClick="removeA()" id="re">Remove</button>
+      <ol>
+      </ol>
+      <p id="dis"></p>
+    </div>
+    <!-- floor one -->
+    <div id="floorTwo">
+      <center>Floor 2</center>
+      <input type="text" id="fTwo">
+      <button onClick="floorB()" id="invTwo">Reserve</button>
+      <button onClick="removeB()" id="reTwo">Remove</button>
+      <ol>
+      </ol>
+      <p id="dis2"></p>
+    </div>
+    <!-- floor two-->
+    <div id="floorThree">
+      <center>Floor 3</center>
+      <input type="text" id="fThree">
+      <button onClick="floorC()" id="invThree">Reserve</button>
+      <ol>
+      </ol>
+      <p id="dis3"></p>
+    </div>
+    <!--floor three-->
+    <div id="floorFour">
+      <center>Floor 4</center>
+      <input type="text" id="fFour">
+      <button onClick="floorD()" id="invFour">Reserve</button>
+      <ol>
+      </ol>
+      <p id="dis4"></p>
+    </div>
+    <!--floor four-->
+    
+    
+    
+    <script>
+    var peepsOne = 0;
+      var displayButton= document.getElementById('invOne').style.display=('block');
+        //document to see if the code works properly
+     function floorA(){
+       var x =document.getElementById("fOne").value;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x);
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+       //creates a list with the user input
+        peepsOne++;
+       if(peepsOne<5){
+         window.alert("Thanks for choosing Skam's Palace");
+       }
+       //if there aren't 5 peeps there is still room
+       else {
+         var closeInput= document.getElementById('invOne').style.display=('none');
+         window.alert("TOO MANY");
+       }
+       //else there isn't anymore room
+     }
+     function removeA(){
+      var UserInput = document.getElementById('fOne').value;
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[UserInput];
+      var removeNu = Nu.parentNode;
+      removeNu.removeChild(Nu);
+      if (peepsOne <= 5){
+      var displayButton= document.getElementById('invOne').style.display=('block');
+      window.alert("Thank You For Staying At Skam's");
+      }
+      peepsOne-=1;
+      }
+     /* NOW ALL YOU MUST DO IS CREATE MORE ACCESS AREAS AND REMOVECHILD AND DESCRIBE THY HOTEL*/
+     
+     
+     
+      var peepsTwo = 0;
+      var displayButton= document.getElementById('invTwo').style.display=('block');
+        //document to see if the code works properly
+     function floorB(){
+       var x =document.getElementById("fTwo").value;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x);
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[1];
+       room.appendChild(newCustomer);
+       //creates a list with the user input
+        peepsTwo++;
+       if(peepsTwo<5){
+         window.alert("Thanks for choosing Skam's Palace");
+       }
+       //if there aren't 5 peeps there is still room
+       else {
+         var closeInput= document.getElementById('invTwo').style.display=('none');
+         window.alert("TOO MANY");
+       }
+       //else there isn't anymore room
+     }
+     function removeB(){
+      var UserInput = document.getElementById('fTwo').value;
+      var Nu = document.getElementsByTagName('ol')[1].getElementsByTagName('li')[UserInput];
+      var removeNu = Nu.parentNode;
+      removeNu.removeChild(Nu);
+      if (peepsTwo <= 5){
+      var displayButton= document.getElementById('invTwo').style.display=('block');
+      window.alert("Thank You For Staying At Skam's");
+      }
+      peepsTwo-=1;
+      }
+    </script>
+  </body>
+  </html>
