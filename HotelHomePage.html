@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>MrSkam's Palace</title>
     <style>
-      
+      body {
+        background-image:url("http://xinature.com/wp-content/uploads/2017/01/beaches-koloa-vacation-place-summer-resort-hawaii-kauai-sheraton-beach-wallpaper-windows-8-1920x1080.jpg");
+        background-size:cover;
+      }
+      .title{
+        color:purple;
+        background-color:rgba(38, 38, 38, 0.7);
+        text-decoration: underline;
+      }
+      #hotelRooms{
+        height:200px;
+        width:230px;
+        position:absolute;
+        right:200px;
+        border-width:2px;
+        border-style:solid;
+        background-color:orange;
+      }
+      #description{
+        float:left;
+        height:400px;
+        width:400px;
+        background-color:blue;
+      }
     </style>
   </head>
   <body>
+    <div><center><h1 class="title">MrSkam's Palace</h1></center></div>
+    <div id="hotelRooms" onmousedown="rooms()">
+      hey
+    </div>
+    <div id="description">hey</div>
     
     <script>
-      
+    function rooms(){
+      var x= document.getElementById('hotelRooms').innerHTML="<a href='hotel.html'></a>";
+    }
     </script>
   </body>
 </html>
