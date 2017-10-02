@@ -8,7 +8,7 @@
         background-size:cover;
       }
       .title{
-        color:purple;
+        color:rgb(76, 0, 255);
         background-color:rgba(38, 38, 38, 0.7);
         text-decoration: underline;
       }
@@ -20,6 +20,7 @@
         border-width:2px;
         border-style:solid;
         background-color:orange;
+        background-size:100% 100%;
       }
       #description{
         float:left;
@@ -32,13 +33,21 @@
   <body>
     <div><center><h1 class="title">MrSkam's Palace</h1></center></div>
     <div id="hotelRooms" onmousedown="rooms()">
-      hey
+      <img src="http://www.hotelroomsearch.net/im/hotels/asia/hk/hotel-icon-1.png" id="hey" width=100% height=100% onmouseover="zoomO()" onmouseout="unzoomO()">
     </div>
     <div id="description">hey</div>
     
     <script>
     function rooms(){
       var x= document.getElementById('hotelRooms').innerHTML="<a href='hotel.html'></a>";
+    }
+    function zoomO(){
+      var x = document.getElementById('hey').style.height="120%";
+      var y = document.getElementById('hey').style.width="120%";
+    }
+    function unzoomO(){
+      var x = document.getElementById('hey').style.height="100%";
+      var y = document.getElementById('hey').style.width="100%";
     }
     </script>
   </body>
