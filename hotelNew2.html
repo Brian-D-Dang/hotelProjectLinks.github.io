@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MrSkam's Palace</title>
+    <style>
+      body {
+        background-image:url("http://extracama.com/wp-content/uploads/2017/06/top-discounted-hotel-rooms-decoration-ideas-cheap-lovely-under-discounted-hotel-rooms-design-tips.jpg");
+        background-size:cover;
+      }
+      /*background image*/
+      .titleColor {
+        color:purple;
+        background-color:rgba(38, 38, 38, 0.7);
+        text-decoration: underline;
+      }
+      /*text that are titles*/
+      #floorOne {
+        border-radius:20px;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:purple;
+        width:400px;
+        height:200px;
+        left:20%;
+        position:absolute;
+      }
+      /* This is div box 1*/
+      #floorTwo{
+        border-radius:20px;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:purple;
+        width:400px;
+        height:200px;
+        right:20%;
+        position:absolute;
+      }
+      /* This is div box 2*/
+      #floorThree{
+        border-radius:20px;
+        position:absolute;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:purple;
+        width:400px;
+        height:200px;
+        left:20%;
+        bottom:100px;
+      }
+      /* This is div box 3*/
+      #floorFour{
+        border-radius:20px;
+        position:absolute;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:purple;
+        width:400px;
+        height:200px;
+        float:right;
+        right:20%;
+        bottom:100px;
+      }
+      /* This is div box 4*/
+      #fOne{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(0, 138, 174, 0.7);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid red;
+    border-bottom: 2px solid red;
+      }
+    /*Adding input 1*/
+      #REone{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(250, 100, 0, 1);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid blue;
+    border-bottom: 2px solid blue;
+    display:none;
+      }
+    /* Removing input 1*/
+    
+      #fTwo{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(0, 138, 174, 0.7);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid red;
+    border-bottom: 2px solid red;
+      }
+    /*Adding input 2*/
+    
+      #REtwo{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(250, 100, 0, 1);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid blue;
+    border-bottom: 2px solid blue;
+    display:none;
+      }
+    /*Removing input 2*/
+      #fThree{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(0, 138, 174, 0.7);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid red;
+    border-bottom: 2px solid red;
+      }
+    /*Adding input 3*/
+      #REthree{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(250, 100, 0, 1);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid blue;
+    border-bottom: 2px solid blue;
+    display:none;
+      }
+      /*Removing input 3*/
+      #fFour{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(0, 138, 174, 0.7);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid red;
+    border-bottom: 2px solid red;
+      }
+    /*Adding input 4*/
+      #REfour{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(250, 100, 0, 1);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid blue;
+    border-bottom: 2px solid blue;
+    display:none;
+      }
+    /*Removing input 4*/
+      
+      
+    /* buttons below */
+      #invOne{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:green;
+        margin:0px 2px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+      }
+    
+      #reButone{
+        color:red;
+        float:left;
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        padding:10px 10px;
+        border-radius:10px 10px 10px 10px;
+      }
+      #clearOne{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:black;
+        margin:0px 2px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+      }
+      /*These are the buttons 1    */
+      
+      #invTwo{
+        float:left;
+        color:green;
+      }
+      #reButtwo{
+        float:left;
+        color:red;
+      }
+      #clearTwo{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:black;
+        margin:0px 2px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+      }
+      /*These are the buttons 2    */
+      
+      #invThree{
+        float:left;
+        color:green;
+      }
+      #reButthree{
+        float:left;
+        color:red;
+      }
+      #clearThree{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:black;
+        margin:0px 2px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+      }
+      /*These are the buttons 3e    */
+      
+      #invFour{
+        float:left;
+        color:green;
+      }
+      #reButfour{
+        float:left;
+        color:red;
+      }
+      #clearFour{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:black;
+        margin:0px 2px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+      }
+      /*These are the buttons 4    */
+      .bigboywords{
+        font-size:25px;
+      }
+    </style>
+  </head>
+  
+  
+  
+  <body>
+    <center><a href="HotelHomePage.html"><h1 class="titleColor">MrSkam's Palace</h1></a></center>
+    <!-- title of the page -->
+    
+    
+    <div id="floorOne">
+    <center class="bigboywords">Floor 1</center>
+      <p1 id="ChangeOne">Reservations/Input Your Name to Sign In</p1>
+      <br>
+      <input type="text" id="fOne" onkeypress="Room1(event)">
+      <input type="text" id="REone" onkeypress="removeOne(event)">
+    <!-- inputs for adding and removing guest -->
+      <button onClick="removingRoomone()" id="reButone">REMOVE</button>
+      <button onClick="removingremoveOne()" id="invOne">ADDING</button>
+      <button onClick="clearFloorone()" id="clearOne">CLEAR</button>
+    <!-- buttons to switch to either removing or adding inputs and one button to completly remove all guest -->
+      <br>
+      <br>
+      <ol>
+      </ol>
+    <!-- list of guest-->
+      <p id="dis"></p>
+    <!-- this is just here to run test runs on variables to see if anything changes like adding or removing from it-->
+    </div>
+    <!-- floor one -->
+    
+    
+    <div id="floorTwo">
+      <center class="bigboywords">Floor 2</center>
+      <p1 id="ChangeTwo">Reservations/Input Your Name to Sign In</p1>
+      <br>
+      <input type="text" id="fTwo" onkeypress="Room2(event)">
+      <input type="text" id="REtwo" onkeypress="removeTwo(event)">
+      <button onClick="removingRoomtwo()" id="reButtwo">REMOVE</button>
+      <button onClick="removingremoveTwo()" id="invTwo">ADDING</button>
+      <button onClick="clearFloortwo()" id="clearTwo">CLEAR</button>
+      <br>
+      <br>
+      
+      <ol>
+      </ol>
+      <p id="dis2"></p>
+    </div>
+    <!-- floor two-->
+    
+    
+    <div id="floorThree">
+      <center class="bigboywords">Floor 3</center>
+      <input type="text" id="fThree">
+      <ol>
+      </ol>
+      <p id="dis3"></p>
+    </div>
+    <!--floor three-->
+    
+    
+    <div id="floorFour">
+      <center class="bigboywords">Floor 4</center>
+      <input type="text" id="fFour">
+      <ol>
+      </ol>
+      <p id="dis4"></p>
+    </div>
+    <!--floor four-->
+    
+    
+    
+    <script>
+    var DATE = new Date();
+    var dud1 = 0;
+    var dud2 = 0;
+    var dud3 = 0;
+    var dud4 = 0;
+
+    function Room1(event){
+      if(window.event.keyCode==13){
+       //if you press enter it will play the next if
+       if(dud1<5){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fOne").value;
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       }
+       else {
+         //this will automatically switch over to the Remove button settings
+         window.alert("TOO MANY GUEST ,REMOVE ONE!");
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var z = document.getElementById('REone').style.display="block";
+         var d = document.getElementById('fOne').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="blue";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var changeButtonColor = document.getElementById('clearOne').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+       }
+         
+       }
+    };
+       
+       
+       
+    function removeOne(event){
+      //onkeypress enter for the remove Input will trigger the code to remove peeps if there is no one it won't remove anything
+      if(window.event.keyCode==13){
+      if (dud1==0){
+      //there isn't a dud1-=1 because it would make the global variable go negative which is bad meaning more people must be added to it breaking the code logically
+        window.alert("THERE ARE NO MORE GUEST ON THIS FLOOR!");
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Reservations/Input Your Name to Sign In";
+         var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var z = document.getElementById('REone').style.display="none";
+         var d = document.getElementById('fOne').style.display="block";
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="purple";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('clearOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+      }
+      else{
+    var UserInput = document.getElementById('REone').value;
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[UserInput-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud1-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      }}
+    };
+      function removingRoomone(){
+        //same thing as removingremoveone/two/three/four
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var z = document.getElementById('REone').style.display="block";
+         var d = document.getElementById('fOne').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="blue";
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var changeClearBut = document.getElementById('clearOne').style.backgroundColor="rgba(0, 138, 174, 0.7)"
+      };
+      function removingremoveOne(){
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REone').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fOne').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="purple";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+      };
+      function clearFloorone(){
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[0];
+      //grabs the orderlist and then the number list
+      dud1=0;
+      //sets the global variable back to one to show that there are no more people inside
+      var removeNu = Nu.parentNode;
+      //new variable to declare that Nu is a parent
+      removeNu.removeChild(Nu);
+      //variable to declare to remove Nu
+      return clearFloorone();
+      //this code allows you to fully clear one floor
+      };
+        //document to see if the code works properlyLL YOU MUST DO IS CREATE MORE ACCESS AREAS AND REMOVECHILD AND DESCRIBE THY HOTEL*/
+        
+        
+        
+        
+        
+        
+        
+        
+        //CUTTTTT OFFFFFFFFFFFFFFFFFFFFFFFF OF THE FIRST FLOOR **********************************************************88
+        
+        
+        
+        
+        
+        
+    
+</script>
+  </body>
+  </html>
