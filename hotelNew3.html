@@ -1,0 +1,1873 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MrSkam's Palace</title>
+    <style>
+      #bod {
+        background-image:url("http://extracama.com/wp-content/uploads/2017/06/top-discounted-hotel-rooms-decoration-ideas-cheap-lovely-under-discounted-hotel-rooms-design-tips.jpg");
+        background-size:cover;
+      }
+      /*background image*/
+      #titleColor {
+        color:white;
+        background-color:rgba(38, 38, 38, 0.7);
+        text-decoration: underline;
+      }
+      /*text that are titles*/
+      #floorOne {
+        border-radius:20px;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:white;
+        width:420px;
+        height:150px;
+        left:20%;
+        position:absolute;
+      }
+      /* This is div box 1*/
+      #floorTwo{
+        border-radius:20px;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:white;
+        width:420px;
+        height:150px;
+        right:20%;
+        position:absolute;
+      }
+      /* This is div box 2*/
+      #floorThree{
+        border-radius:20px;
+        position:absolute;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:white;
+        width:420px;
+        height:150px;
+        left:20%;
+        bottom:100px;
+      }
+      /* This is div box 3*/
+      #floorFour{
+        border-radius:20px;
+        position:absolute;
+        background-color:rgba(0, 138, 174, 0.7);
+        color:white;
+        width:420px;
+        height:150px;
+        float:right;
+        right:20%;
+        bottom:100px;
+      }
+      /* This is div box 4*/
+      #fOne{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(0, 138, 174, 0.7);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid rgba(250, 100, 0, 1);
+    border-bottom: 2px solid rgba(250, 100, 0, 1);
+    color:white;
+      }
+    /*Adding input 1*/
+      #REone{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(250, 100, 0, 1);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid rgba(0, 138, 174, 1);
+    border-bottom: 2px solid rgba(0, 138, 174, 1);
+    display:none;
+    color:white;
+      }
+    /* Removing input 1*/
+    
+      #fTwo{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(0, 138, 174, 0.7);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid rgba(250, 100, 0, 1);
+    border-bottom: 2px solid rgba(250, 100, 0, 1);
+    color:white;
+      }
+    /*Adding input 2*/
+    
+      #REtwo{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(250, 100, 0, 1);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid rgba(0, 138, 174, 1);
+    border-bottom: 2px solid rgba(0, 138, 174, 1);
+    display:none;
+    color:white;
+      }
+    /*Removing input 2*/
+      #fThree{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(0, 138, 174, 0.7);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid rgba(250, 100, 0, 1);
+    border-bottom: 2px solid rgba(250, 100, 0, 1);
+    color:white;
+      }
+    /*Adding input 3*/
+      #REthree{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(250, 100, 0, 1);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid rgba(0, 138, 174, 1);
+    border-bottom: 2px solid rgba(0, 138, 174, 1);
+    display:none;
+    color:white;
+      }
+      /*Removing input 3*/
+      #fFour{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(0, 138, 174, 0.7);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid rgba(250, 100, 0, 1);
+    border-bottom: 2px solid rgba(250, 100, 0, 1);
+    color:white;
+      }
+    /*Adding input 4*/
+      #REfour{
+        float:left;
+        height:30px;
+        width:160px;
+    margin: 5px 5px;
+    background-color:rgba(250, 100, 0, 1);
+    box-sizing: border-box;
+    border: none;
+    border-top:2px solid rgba(0, 138, 174, 1);
+    border-bottom: 2px solid rgba(0, 138, 174, 1);
+    display:none;
+    color:white;
+      }
+    /*Removing input 4*/
+      
+      
+    /* buttons below */
+      #invOne{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:white;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+    
+      #reButone{
+        color:white;
+        float:left;
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        padding:10px 10px;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+      #clearOne{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:white;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+      /*These are the buttons 1    */
+      
+      #invTwo{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:white;
+        margin-left:7px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+      }
+      #reButtwo{
+        color:white;
+        float:left;
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        padding:10px 10px;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+      #clearTwo{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:white;
+        margin:0px 2px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+      /*These are the buttons 2    */
+      
+      #invThree{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:white;
+        margin-left:7px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+      }
+      #reButthree{
+        color:white;
+        float:left;
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        padding:10px 10px;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+      #clearThree{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:white;
+        margin:0px 2px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+      /*These are the buttons 3e    */
+      
+      #invFour{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:white;
+        margin-left:7px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+      }
+      #reButfour{
+        color:white;
+        float:left;
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        padding:10px 10px;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+      #clearFour{
+        text-align:center;
+        border:none;
+        background-color:rgba(250, 100, 0, 1);
+        color:white;
+        margin:0px 2px;
+        padding:10px 10px;
+        float:left;
+        border-radius:10px 10px 10px 10px;
+        margin-left:7px;
+      }
+      /*These are the buttons 4    */
+      .bigboywords{
+        font-size:25px;
+      }
+      /*These are the steps to tell you what to do in the div box*/
+      #ChangeOne {
+        margin-left:8px;
+      }
+      #ChangeTwo {
+        margin-left:8px;
+      }
+      #ChangeThree {
+        margin-left:8px;
+      }
+      #ChangeFour {
+        margin-left:8px;
+      }
+    </style>
+  </head>
+  
+  
+  
+  <body id="bod">
+    <audio id = "Music">
+      <source src = "stageClear.Wav" type="audio/wav">
+    </audio>
+    <center><a href="HotelHomePage.html"><h1 id="titleColor">MrSkam's Palace</h1></a></center>
+    <!-- title of the page -->
+    
+    
+    <div id="floorOne">
+    <center class="bigboywords">Floor 1</center>
+      <p id="ChangeOne">Reservations/Input Your Name to Sign In</p>
+      <input type="text" id="fOne" onkeypress="Room1(event)">
+      <input type="text" id="REone" onkeypress="removeOne(event)">
+    <!-- inputs for adding and removing guest -->
+      <button onClick="removingRoomone()" id="reButone">REMOVE</button>
+      <button onClick="removingremoveOne()" id="invOne">ADDING</button>
+      <button onClick="clearFloorone()" id="clearOne">CLEAR</button>
+    <!-- buttons to switch to either removing or adding inputs and one button to completly remove all guest -->
+      <br>
+      <br>
+      <ol>
+      </ol>
+    <!-- list of guest-->
+      <p id="dis"></p>
+    <!-- this is just here to run test runs on variables to see if anything changes like adding or removing from it-->
+    </div>
+    <!-- floor one -->
+    
+    
+    <div id="floorTwo">
+      <center class="bigboywords">Floor 2</center>
+      <p id="ChangeTwo">Reservations/Input Your Name to Sign In</p>
+      <input type="text" id="fTwo" onkeypress="Room2(event)">
+      <input type="text" id="REtwo" onkeypress="removeTwo(event)">
+      <button onClick="removingRoomtwo()" id="reButtwo">REMOVE</button>
+      <button onClick="removingremoveTwo()" id="invTwo">ADDING</button>
+      <button onClick="clearFloortwo()" id="clearTwo">CLEAR</button>
+      <br>
+      <br>
+      
+      <ol>
+      </ol>
+      <p id="dis2"></p>
+    </div>
+    <!-- floor two-->
+    
+    
+    <div id="floorThree">
+      <center class="bigboywords">Floor 3</center>
+      <p id="ChangeThree">Reservations/Input Your Name to Sign In</p>
+      <input type="text" id="fThree" onkeypress="Room3(event)">
+      <input type="text" id="REthree" onkeypress="removeThree(event)">
+      <button onClick="removingRoomthree()" id="reButthree">REMOVE</button>
+      <button onClick="removingremoveThree()" id="invThree">ADDING</button>
+      <button onClick="clearFloorthree()" id="clearThree">CLEAR</button>
+      <br>
+      <br>
+      
+      <ol>
+      </ol>
+      <p id="dis3"></p>
+    </div>
+    <!--floor three-->
+    
+    
+    <div id="floorFour">
+      <center class="bigboywords">Floor 4</center>
+      <p id="ChangeFour">Reservations/Input Your Name to Sign In</p>
+      <input type="text" id="fFour" onkeypress="Room4(event)">
+      <input type="text" id="REfour" onkeypress="removeFour(event)">
+      <button onClick="removingRoomfour()" id="reButfour">REMOVE</button>
+      <button onClick="removingremoveFour()" id="invFour">ADDING</button>
+      <button onClick="clearFloorfour()" id="clearFour">CLEAR</button>
+      <br>
+      <br>
+      
+      <ol>
+      </ol>
+      <p id="dis4"></p>
+    </div>
+    <!--floor four-->
+    
+    
+    
+    <script>
+    var DATE = new Date();
+    var dud1 = 0;
+    var dud2 = 0;
+    var dud3 = 0;
+    var dud4 = 0;
+    var clearWav = document.getElementById('Music');
+    function Room1(event){
+      if(window.event.keyCode==13){
+       //if you press enter it will play the next if
+       if(dud1==0){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fOne").value;
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="170px" ;
+       }
+      else if(dud1==1){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fOne").value;
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="190px" ;
+       }
+      else if(dud1==2){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fOne").value;
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="210px" ;
+       }
+       else if(dud1==3){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fOne").value;
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="230px" ;
+       }
+      else if(dud1==4){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fOne").value;
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="250px" ;
+       }
+       else {
+         //this will automatically switch over to the Remove button settings
+         window.alert("TOO MANY GUEST ,REMOVE ONE!");
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(250, 100, 0, 0.7)";
+         var z = document.getElementById('REone').style.display="block";
+         var d = document.getElementById('fOne').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="white";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('clearOne').style.backgroundColor="rgba(0, 138, 174, 1)";
+       }
+         
+       }
+    };
+       
+       
+       
+    function removeOne(event){
+      //onkeypress enter for the remove Input will trigger the code to remove peeps if there is no one it won't remove anything
+    var UserInput1 = document.getElementById('REone').value;
+    var rounddown = Math.floor(UserInput1);
+    var NoDec = parseInt(rounddown);
+      if(window.event.keyCode==13){
+      if (dud1==0){
+      //there isn't a dud1-=1 because it would make the global variable go negative which is bad meaning more people must be added to it breaking the code logically
+        window.alert("THERE ARE NO MORE GUEST ON THIS FLOOR!");
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Reservations/Input Your Name to Sign In";
+         var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var z = document.getElementById('REone').style.display="none";
+         var d = document.getElementById('fOne').style.display="block";
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="white";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('clearOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeDiv = document.getElementById("floorOne").style.height = "150px";
+      }
+      else if (NoDec>dud1){
+        window.alert("There is No One Occupying This Room!");
+      }
+      else if ((UserInput1>5)||(NoDec<=0)){
+        window.alert("There Aren't Any Negative Rooms Sir!");
+      }
+     else if ((dud1==1)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud1-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorOne').style.height = "150px";
+      }
+      else if ((dud1==2)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud1-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorOne').style.height = "170px";
+      }
+      else if ((dud1==3)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud1-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorOne').style.height = "190px";
+      }
+      else if ((dud1==4)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud1-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorOne').style.height = "210px";
+      }
+      else if ((dud1==5)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud1-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorOne').style.height = "230px";
+      }
+      }
+    };
+      function removingRoomone(){
+        //same thing as removingremoveone/two/three/four
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(250, 100, 0, 0.7)";
+         var z = document.getElementById('REone').style.display="block";
+         var d = document.getElementById('fOne').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="white";
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeClearBut = document.getElementById('clearOne').style.backgroundColor="rgba(0, 138, 174, 1)"
+      };
+      function removingremoveOne(){
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REone').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fOne').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="whitee";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         if (dud1 == 0){
+         var changeDiv = document.getElementById("floorOne").style.height = "150px";
+         }
+         else if (dud1 == 1){
+         var changeDiv = document.getElementById("floorOne").style.height = "170px";
+         }
+         else if (dud1 == 2){
+         var changeDiv = document.getElementById("floorOne").style.height = "190px";
+         }
+         else if (dud1 == 3){
+         var changeDiv = document.getElementById("floorOne").style.height = "210px";
+         }
+         else if (dud1 == 4){
+         var changeDiv = document.getElementById("floorOne").style.height = "230px";
+         }
+         else if (dud1 == 5){
+         var changeDiv = document.getElementById("floorOne").style.height = "250px";
+         }
+         //this line of code changes the div box size depending on the number of people on the floor to fit the amount needed
+      };
+      function clearFloorone(){
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[0];
+      //grabs the orderlist and then the number list
+      dud1=0;
+      //sets the global variable back to one to show that there are no more people inside
+      var removeNu = Nu.parentNode;
+      //new variable to declare that Nu is a parent
+      removeNu.removeChild(Nu);
+      //variable to declare to remove Nu
+      var changeDiv = document.getElementById("floorOne").style.height = "150px";
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeOne').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorOne').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REone').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fOne').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorOne').style.color="whitee";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButone').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearOne').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+      return clearFloorone();
+      //this code allows you to fully clear one floor
+      };
+        //document to see if the code works properlyLL YOU MUST DO IS CREATE MORE ACCESS AREAS AND REMOVECHILD AND DESCRIBE THY HOTEL*/
+        
+        
+        
+        
+        
+        
+        
+        
+        //CUTTTTT OFFFFFFFFFFFFFFFFFFFFFFFF OF THE FIRST FLOOR **********************************************************88
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    function Room2(event){
+      if(window.event.keyCode==13){
+       //if you press enter it will play the next if
+       if(dud2==0){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fTwo").value;
+        dud2++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[1];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorTwo').style.height ="170px" ;
+       }
+      else if(dud2==1){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fTwo").value;
+        dud2++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[1];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorTwo').style.height ="190px" ;
+       }
+      else if(dud2==2){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fTwo").value;
+        dud2++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[1];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorTwo').style.height ="210px" ;
+       }
+       else if(dud2==3){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fTwo").value;
+        dud2++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[1];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorTwo').style.height ="230px" ;
+       }
+      else if(dud2==4){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fTwo").value;
+        dud2++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[1];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorTwo').style.height ="250px" ;
+       }
+       else {
+         //this will automatically switch over to the Remove button settings
+         window.alert("TOO MANY GUEST ,REMOVE ONE!");
+         var changeletters = document.getElementById('ChangeTwo').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorTwo').style.backgroundColor="rgba(250, 100, 0, 0.7)";
+         var z = document.getElementById('REtwo').style.display="block";
+         var d = document.getElementById('fTwo').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorTwo').style.color="white";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButtwo').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('invTwo').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('clearTwo').style.backgroundColor="rgba(0, 138, 174, 1)";
+       }
+         
+       }
+    };
+        
+        
+    
+    function removeTwo(event){
+      //onkeypress enter for the remove Input will trigger the code to remove peeps if there is no one it won't remove anything
+    var UserInput2 = document.getElementById('REtwo').value;
+    var rounddown = Math.floor(UserInput2)
+    var NoDec = parseInt(rounddown);
+      if(window.event.keyCode==13){
+      if (dud2==0){
+      //there isn't a dud1-=1 because it would make the global variable go negative which is bad meaning more people must be added to it breaking the code logically
+        window.alert("THERE ARE NO MORE GUEST ON THIS FLOOR!");
+         var changeletters = document.getElementById('ChangeTwo').innerHTML="Reservations/Input Your Name to Sign In";
+         var changeBackground = document.getElementById('floorTwo').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var z = document.getElementById('REtwo').style.display="none";
+         var d = document.getElementById('fTwo').style.display="block";
+         var changeWORDCOLOR = document.getElementById('floorTwo').style.color="white";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButtwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('invTwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('clearTwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeDiv = document.getElementById("floorTwo").style.height = "150px";
+      }
+      else if (NoDec>dud2){
+        window.alert("There is No One Occupying This Room!");
+      }
+      else if ((UserInput2>5)||(NoDec<=0)){
+        window.alert("There Aren't Any Negative Rooms Sir!");
+      }
+      else if ((dud2==1)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[1].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud2-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorTwo').style.height = "150px";
+      }
+      else if ((dud2==2)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[1].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud2-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorTwo').style.height = "170px";
+      }
+      else if ((dud2==3)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[1].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud2-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorTwo').style.height = "190px";
+      }
+      else if ((dud2==4)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[1].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud2-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorTwo').style.height = "210px";
+      }
+      else if ((dud2==5)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[1].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud2-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorTwo').style.height = "230px";
+      }
+      }
+      
+    };
+    
+    
+      function removingRoomtwo(){
+        //same thing as removingremoveone/two/three/four
+         var changeletters = document.getElementById('ChangeTwo').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorTwo').style.backgroundColor="rgba(250, 100, 0, 0.7)";
+         var z = document.getElementById('REtwo').style.display="block";
+         var d = document.getElementById('fTwo').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorTwo').style.color="white";
+         var changeButtonColor = document.getElementById('reButtwo').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('invTwo').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeClearBut = document.getElementById('clearTwo').style.backgroundColor="rgba(0, 138, 174, 1)"
+      };
+      function removingremoveTwo(){
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeTwo').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorTwo').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REtwo').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fTwo').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorTwo').style.color="white";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invTwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButtwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearTwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         if (dud2 == 0){
+         var changeDiv = document.getElementById("floorTwo").style.height = "150px";
+         }
+         else if (dud2 == 1){
+         var changeDiv = document.getElementById("floorTwo").style.height = "170px";
+         }
+         else if (dud2 == 2){
+         var changeDiv = document.getElementById("floorTwo").style.height = "190px";
+         }
+         else if (dud2 == 3){
+         var changeDiv = document.getElementById("floorTwo").style.height = "210px";
+         }
+         else if (dud2 == 4){
+         var changeDiv = document.getElementById("floorTwo").style.height = "230px";
+         }
+         else if (dud2 == 5){
+         var changeDiv = document.getElementById("floorTwo").style.height = "250px";
+         }
+         //this line of code changes the div box size depending on the number of people on the floor to fit the amount needed
+      };
+      function clearFloortwo(){
+      var Nu = document.getElementsByTagName('ol')[1].getElementsByTagName('li')[0];
+      //grabs the orderlist and then the number list
+      dud2=0;
+      //sets the global variable back to one to show that there are no more people inside
+      var removeNu = Nu.parentNode;
+      //new variable to declare that Nu is a parent
+      removeNu.removeChild(Nu);
+      //variable to declare to remove Nu
+      var changeDiv = document.getElementById("floorTwo").style.height = "150px";
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeTwo').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorTwo').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REtwo').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fTwo').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorTwo').style.color="white";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invTwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButtwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearTwo').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+      return clearFloortwo();
+      //this code allows you to fully clear one floor
+      };
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      //THE LIIIIIIIINE TO THE NEXTTTTT FUNCTIONS FOR DIV 3 IS OVER HEERRRRRRRRREEEEEEEEEEEEE
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    function Room3(event){
+      if(window.event.keyCode==13){
+       //if you press enter it will play the next if
+       if(dud3==0){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fThree").value;
+        dud3++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[2];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorThree').style.height ="170px" ;
+       }
+      else if(dud3==1){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fThree").value;
+        dud3++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[2];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorThree').style.height ="190px" ;
+       }
+      else if(dud3==2){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fThree").value;
+        dud3++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[2];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorThree').style.height ="210px" ;
+       }
+       else if(dud3==3){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fThree").value;
+        dud3++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[2];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorThree').style.height ="230px" ;
+       }
+      else if(dud3==4){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fThree").value;
+        dud3++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[2];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorThree').style.height ="250px" ;
+       }
+       else {
+         //this will automatically switch over to the Remove button settings
+         window.alert("TOO MANY GUEST ,REMOVE ONE!");
+         var changeletters = document.getElementById('ChangeThree').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorThree').style.backgroundColor="rgba(250, 100, 0, 0.7)";
+         var z = document.getElementById('REthree').style.display="block";
+         var d = document.getElementById('fThree').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorThree').style.color="white";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButthree').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('invThree').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('clearThree').style.backgroundColor="rgba(0, 138, 174, 1)";
+       }
+         
+       }
+    };
+   
+   
+    function removeThree(event){
+      //onkeypress enter for the remove Input will trigger the code to remove peeps if there is no one it won't remove anything
+    var UserInput3 = document.getElementById('REthree').value;
+    var rounddown = Math.floor(UserInput3)
+            var NoDec =parseInt(rounddown);
+      if(window.event.keyCode==13){
+      if (dud3==0){
+      //there isn't a dud1-=1 because it would make the global variable go negative which is bad meaning more people must be added to it breaking the code logically
+        window.alert("THERE ARE NO MORE GUEST ON THIS FLOOR!");
+         var changeletters = document.getElementById('ChangeThree').innerHTML="Reservations/Input Your Name to Sign In";
+         var changeBackground = document.getElementById('floorThree').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var z = document.getElementById('REthree').style.display="none";
+         var d = document.getElementById('fThree').style.display="block";
+         var changeWORDCOLOR = document.getElementById('floorThree').style.color="white";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButthree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('invThree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('clearThree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeDiv = document.getElementById("floorThree").style.height = "150px";
+      }
+      else if (NoDec>dud3){
+        window.alert("There is No One Occupying This Room!");
+      }
+      else if ((UserInput3>5)||(NoDec<=0)){
+        window.alert("There Aren't Any Negative Rooms Sir!");
+      }
+      else if ((dud3==1)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[2].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud3-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorThree').style.height = "150px";
+      }
+      else if ((dud3==2)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[2].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud3-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorThree').style.height = "170px";
+      }
+      else if ((dud3==3)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[2].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud3-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorThree').style.height = "190px";
+      }
+      else if ((dud3==4)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[2].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud3-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorThree').style.height = "210px";
+      }
+      else if ((dud3==5)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[2].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud3-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorThree').style.height = "230px";
+      }
+      }
+      
+    };
+      
+      function removingRoomthree(){
+        //same thing as removingremoveone/two/three/four
+         var changeletters = document.getElementById('ChangeThree').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorThree').style.backgroundColor="rgba(250, 100, 0, 0.7)";
+         var z = document.getElementById('REthree').style.display="block";
+         var d = document.getElementById('fThree').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorThree').style.color="white";
+         var changeButtonColor = document.getElementById('reButthree').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('invThree').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeClearBut = document.getElementById('clearThree').style.backgroundColor="rgba(0, 138, 174, 1)"
+      };
+      function removingremoveThree(){
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeThree').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorThree').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REthree').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fThree').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorThree').style.color="white";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invThree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButthree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearThree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         if (dud3 == 0){
+         var changeDiv = document.getElementById("floorThree").style.height = "150px";
+         }
+         else if (dud3 == 1){
+         var changeDiv = document.getElementById("floorThree").style.height = "170px";
+         }
+         else if (dud3 == 2){
+         var changeDiv = document.getElementById("floorThree").style.height = "190px";
+         }
+         else if (dud3 == 3){
+         var changeDiv = document.getElementById("floorThree").style.height = "210px";
+         }
+         else if (dud3 == 4){
+         var changeDiv = document.getElementById("floorThree").style.height = "230px";
+         }
+         else if (dud3 == 5){
+         var changeDiv = document.getElementById("floorThree").style.height = "250px";
+         }
+         //this line of code changes the div box size depending on the number of people on the floor to fit the amount needed
+      };
+      function clearFloorthree(){
+      var Nu = document.getElementsByTagName('ol')[2].getElementsByTagName('li')[0];
+      //grabs the orderlist and then the number list
+      dud3=0;
+      //sets the global variable back to one to show that there are no more people inside
+      var removeNu = Nu.parentNode;
+      //new variable to declare that Nu is a parent
+      removeNu.removeChild(Nu);
+      //variable to declare to remove Nu
+      var changeDiv = document.getElementById("floorThree").style.height = "150px";
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeThree').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorThree').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REthree').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fThree').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorThree').style.color="white";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invThree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButthree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearThree').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+      return clearFloorthree();
+      //this code allows you to fully clear one floor
+      };
+      
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ //CUT OFFFFFFFFFFFFFFFFFFFFFF FOR DIV $444444444444444444444444444444444444444444444444444444444
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     function Room4(event){
+      if(window.event.keyCode==13){
+       //if you press enter it will play the next if
+       if(dud4==0){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fFour").value;
+        dud4++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[3];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorFour').style.height ="170px" ;
+       }
+      else if(dud4==1){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fFour").value;
+        dud4++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[3];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorFour').style.height ="190px" ;
+       }
+      else if(dud4==2){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fFour").value;
+        dud4++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[3];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorFour').style.height ="210px" ;
+       }
+       else if(dud4==3){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fFour").value;
+        dud4++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[3];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorFour').style.height ="230px" ;
+       }
+      else if(dud4==4){
+       //if the amount of dudes is less than five add some dudes
+  var x =document.getElementById("fFour").value;
+        dud4++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode(x+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[3];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorFour').style.height ="250px" ;
+       }
+       else {
+         //this will automatically switch over to the Remove button settings
+         window.alert("TOO MANY GUEST ,REMOVE ONE!");
+         var changeletters = document.getElementById('ChangeFour').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorFour').style.backgroundColor="rgba(250, 100, 0, 0.7)";
+         var z = document.getElementById('REfour').style.display="block";
+         var d = document.getElementById('fFour').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorFour').style.color="white";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButfour').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('invFour').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('clearFour').style.backgroundColor="rgba(0, 138, 174, 1)";
+       }
+         
+       }
+    };
+   
+ 
+ 
+    function removeFour(event){
+      //onkeypress enter for the remove Input will trigger the code to remove peeps if there is no one it won't remove anything
+    var UserInput4 = document.getElementById('REfour').value;
+    var rounddown=Math.floor(UserInput4)
+            var NoDec =parseInt(rounddown);
+      if(window.event.keyCode==13){
+      if (dud4==0){
+      //there isn't a dud1-=1 because it would make the global variable go negative which is bad meaning more people must be added to it breaking the code logically
+        window.alert("THERE ARE NO MORE GUEST ON THIS FLOOR!");
+         var changeletters = document.getElementById('ChangeFour').innerHTML="Reservations/Input Your Name to Sign In";
+         var changeBackground = document.getElementById('floorFour').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         var z = document.getElementById('REfour').style.display="none";
+         var d = document.getElementById('fFour').style.display="block";
+         var changeWORDCOLOR = document.getElementById('floorFour').style.color="white";
+         //if there are too many dudes switch the input to the delete input
+         var changeButtonColor = document.getElementById('reButfour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('invFour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeButtonColor = document.getElementById('clearFour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         var changeDiv = document.getElementById("floorFour").style.height = "150px";
+      }
+      else if (NoDec>dud4){
+        window.alert("There is No One Occupying This Room!");
+      }
+      else if ((UserInput4>5)||(NoDec<=0)){
+        window.alert("There Aren't Any Negative Rooms Sir!");
+      }
+      else if ((dud4==1)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[3].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud4-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorFour').style.height = "150px";
+      }
+      else if ((dud4==2)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[3].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud4-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorFour').style.height = "170px";
+      }
+      else if ((dud4==3)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[3].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud4-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorFour').style.height = "190px";
+      }
+      else if ((dud4==4)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[3].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud4-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorFour').style.height = "210px";
+      }
+      else if ((dud4==5)&&((NoDec==1)||(NoDec==2)||(NoDec==3)||(NoDec==4)||(NoDec==5))) {
+      //takes the input from the user
+      var Nu = document.getElementsByTagName('ol')[3].getElementsByTagName('li')[NoDec-=1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud4-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorFour').style.height = "230px";
+      }
+      }
+      
+    };
+      function removingRoomfour(){
+        //same thing as removingremoveone/two/three/four
+         var changeletters = document.getElementById('ChangeFour').innerHTML="Remove Guest By Room Number";
+         var changeBackground = document.getElementById('floorFour').style.backgroundColor="rgba(250, 100, 0, 0.7)";
+         var z = document.getElementById('REfour').style.display="block";
+         var d = document.getElementById('fFour').style.display="none";
+         var changeWORDCOLOR = document.getElementById('floorFour').style.color="white";
+         var changeButtonColor = document.getElementById('reButfour').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeButtonColor = document.getElementById('invFour').style.backgroundColor="rgba(0, 138, 174, 1)";
+         var changeClearBut = document.getElementById('clearFour').style.backgroundColor="rgba(0, 138, 174, 1)"
+      };
+      function removingremoveFour(){
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeFour').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorFour').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REfour').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fFour').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorFour').style.color="white";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invFour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButfour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearFour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         if (dud4 == 0){
+         var changeDiv = document.getElementById("floorFour").style.height = "150px";
+         }
+         else if (dud4 == 1){
+         var changeDiv = document.getElementById("floorFour").style.height = "170px";
+         }
+         else if (dud4 == 2){
+         var changeDiv = document.getElementById("floorFour").style.height = "190px";
+         }
+         else if (dud4 == 3){
+         var changeDiv = document.getElementById("floorFour").style.height = "210px";
+         }
+         else if (dud4 == 4){
+         var changeDiv = document.getElementById("floorFour").style.height = "230px";
+         }
+         else if (dud4 == 5){
+         var changeDiv = document.getElementById("floorFour").style.height = "250px";
+         }
+         //this line of code changes the div box size depending on the number of people on the floor to fit the amount needed
+      };
+      function clearFloorfour(){
+      var Nu = document.getElementsByTagName('ol')[3].getElementsByTagName('li')[0];
+      //grabs the orderlist and then the number list
+      dud4=0;
+      //sets the global variable back to one to show that there are no more people inside
+      var removeNu = Nu.parentNode;
+      //new variable to declare that Nu is a parent
+      removeNu.removeChild(Nu);
+      //variable to declare to remove Nu
+      var changeDiv = document.getElementById("floorFour").style.height = "150px";
+        //on click function to set the buttons back into adding in guest mode
+         var changeletters = document.getElementById('ChangeFour').innerHTML="Reservations/Input Your Name to Sign In";
+         //changed the letters so it shows that its reserving ,not kicking!
+          var changeBackground = document.getElementById('floorFour').style.backgroundColor="rgba(0, 138, 174, 0.7)";
+         //changed the background so that the floor can become a certain color to show that it isn't full of people
+         var z = document.getElementById('REfour').style.display="none";
+         //changes it so that the remove Input disappears
+         var d = document.getElementById('fFour').style.display="block";
+         //changes it so that the adding Input reappears
+         var changeWORDCOLOR = document.getElementById('floorFour').style.color="white";
+         //changes the font color so that it is purple
+         var changeButtonColor = document.getElementById('invFour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeButtonColor = document.getElementById('reButfour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+         var changeClearBut = document.getElementById('clearFour').style.backgroundColor="rgba(250, 100, 0, 1)";
+         //changes the background on the button to show orange
+      return clearFloorfour();
+      //this code allows you to fully clear one floor
+      };
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ //CHEEET
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (function (global) {
+  'use strict';
+
+  var cheet,
+      sequences = {},
+      keys = {
+        backspace: 8,
+        tab: 9,
+        enter: 13,
+        'return': 13,
+        shift: 16,
+        '⇧': 16,
+        control: 17,
+        ctrl: 17,
+        '⌃': 17,
+        alt: 18,
+        option: 18,
+        '⌥': 18,
+        pause: 19,
+        capslock: 20,
+        esc: 27,
+        space: 32,
+        pageup: 33,
+        pagedown: 34,
+        end: 35,
+        home: 36,
+        left: 37,
+        L: 37,
+        '←': 37,
+        up: 38,
+        U: 38,
+        '↑': 38,
+        right: 39,
+        R: 39,
+        '→': 39,
+        down: 40,
+        D: 40,
+        '↓': 40,
+        insert: 45,
+        'delete': 46,
+        '0': 48,
+        '1': 49,
+        '2': 50,
+        '3': 51,
+        '4': 52,
+        '5': 53,
+        '6': 54,
+        '7': 55,
+        '8': 56,
+        '9': 57,
+        a: 65,
+        b: 66,
+        c: 67,
+        d: 68,
+        e: 69,
+        f: 70,
+        g: 71,
+        h: 72,
+        i: 73,
+        j: 74,
+        k: 75,
+        l: 76,
+        m: 77,
+        n: 78,
+        o: 79,
+        p: 80,
+        q: 81,
+        r: 82,
+        s: 83,
+        t: 84,
+        u: 85,
+        v: 86,
+        w: 87,
+        x: 88,
+        y: 89,
+        z: 90,
+        '⌘': 91,
+        command: 91,
+        kp_0: 96,
+        kp_1: 97,
+        kp_2: 98,
+        kp_3: 99,
+        kp_4: 100,
+        kp_5: 101,
+        kp_6: 102,
+        kp_7: 103,
+        kp_8: 104,
+        kp_9: 105,
+        kp_multiply: 106,
+        kp_plus: 107,
+        kp_minus: 109,
+        kp_decimal: 110,
+        kp_divide: 111,
+        f1: 112,
+        f2: 113,
+        f3: 114,
+        f4: 115,
+        f5: 116,
+        f6: 117,
+        f7: 118,
+        f8: 119,
+        f9: 120,
+        f10: 121,
+        f11: 122,
+        f12: 123,
+        equal: 187,
+        '=': 187,
+        comma: 188,
+        ',': 188,
+        minus: 189,
+        '-': 189,
+        period: 190,
+        '.': 190
+      },
+      Sequence,
+      NOOP = function NOOP() {},
+      held = {};
+
+  Sequence = function Sequence (str, next, fail, done) {
+    var i;
+
+    this.str = str;
+    this.next = next ? next : NOOP;
+    this.fail = fail ? fail : NOOP;
+    this.done = done ? done : NOOP;
+
+    this.seq = str.split(' ');
+    this.keys = [];
+
+    for (i=0; i<this.seq.length; ++i) {
+      this.keys.push(keys[this.seq[i]]);
+    }
+
+    this.idx = 0;
+  };
+
+  Sequence.prototype.keydown = function keydown (keyCode) {
+    var i = this.idx;
+    if (keyCode !== this.keys[i]) {
+      if (i > 0) {
+        this.reset();
+        this.fail(this.str);
+        cheet.__fail(this.str);
+      }
+      return;
+    }
+
+    this.next(this.str, this.seq[i], i, this.seq);
+    cheet.__next(this.str, this.seq[i], i, this.seq);
+
+    if (++this.idx === this.keys.length) {
+      this.done(this.str);
+      cheet.__done(this.str);
+      this.reset();
+    }
+  };
+
+  Sequence.prototype.reset = function () {
+    this.idx = 0;
+  };
+
+  cheet = function cheet (str, handlers) {
+    var next, fail, done;
+
+    if (typeof handlers === 'function') {
+      done = handlers;
+    } else if (handlers !== null && handlers !== undefined) {
+      next = handlers.next;
+      fail = handlers.fail;
+      done = handlers.done;
+    }
+
+    sequences[str] = new Sequence(str, next, fail, done);
+  };
+
+  cheet.disable = function disable (str) {
+    delete sequences[str];
+  };
+
+  function keydown (e) {
+    var id,
+        k = e ? e.keyCode : event.keyCode;
+
+    if (held[k]) return;
+    held[k] = true;
+
+    for (id in sequences) {
+      sequences[id].keydown(k);
+    }
+  }
+
+  function keyup (e) {
+    var k = e ? e.keyCode : event.keyCode;
+    held[k] = false;
+  }
+
+  function resetHeldKeys (e) {
+    var k;
+    for (k in held) {
+      held[k] = false;
+    }
+  }
+
+  function on (obj, type, fn) {
+    if (obj.addEventListener) {
+      obj.addEventListener(type, fn, false);
+    } else if (obj.attachEvent) {
+      obj['e' + type + fn] = fn;
+      obj[type + fn] = function () {
+        obj['e' + type + fn](window.event);
+      };
+      obj.attachEvent('on' + type, obj[type + fn]);
+    }
+  }
+
+  on(window, 'keydown', keydown);
+  on(window, 'keyup', keyup);
+  on(window, 'blur', resetHeldKeys);
+  on(window, 'focus', resetHeldKeys);
+
+  cheet.__next = NOOP;
+  cheet.next = function next (fn) {
+    cheet.__next = fn === null ? NOOP : fn;
+  };
+
+  cheet.__fail = NOOP;
+  cheet.fail = function fail (fn) {
+    cheet.__fail = fn === null ? NOOP : fn;
+  };
+
+  cheet.__done = NOOP;
+  cheet.done = function done (fn) {
+    cheet.__done = fn === null ? NOOP : fn;
+  };
+
+  cheet.reset = function reset (id) {
+    var seq = sequences[id];
+    if (!(seq instanceof Sequence)) {
+      console.warn('cheet: Unknown sequence: ' + id);
+      return;
+    }
+
+    seq.reset();
+  };
+
+  global.cheet = cheet;
+
+  if (typeof define === 'function' && define.amd) {
+    define([], function () { return cheet; });
+  } else if (typeof module !== 'undefined' && module !== null) {
+    module.exports = cheet;
+  }
+cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+    alert('Voilà!');
+    var changeback = document.getElementById('bod').style.backgroundImage = "url('https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg')";
+    clearWav.play();
+})
+})(this);
+</script>
+  </body>
+  </html>
