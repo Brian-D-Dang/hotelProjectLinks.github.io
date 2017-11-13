@@ -325,7 +325,13 @@
   
   <body id="bod">
     <audio id = "Music">
-      <source src = "stageClear.Wav" type="audio/wav">
+      <source src = "SkinnyPenis.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "yourName">
+      <source src = "Goshintai.mp3" type = "audio/mpeg">
+    </audio>
+    <audio id = "stageClear">
+      <source src = "stageClear.Wav" type = "audio/wav">
     </audio>
     <center><a href="HotelHomePage.html"><h1 id="titleColor">MrSkam's Palace</h1></a></center>
     <!-- title of the page -->
@@ -403,6 +409,9 @@
       </ol>
       <p id="dis4"></p>
     </div>
+    <div id="LocationOfButton">
+      <button onClick="chooseNewsong()"> Music</button>
+    </div>
     <!--floor four-->
     
     
@@ -414,6 +423,16 @@
     var dud3 = 0;
     var dud4 = 0;
     var clearWav = document.getElementById('Music');
+    var music = document.getElementById('yourName');
+    var music2 = document.getElementById('stageClear');
+    var allMusic = [
+      music2,
+      music
+      ];
+    var randomMusic = Math.floor(Math.random()*2);
+    function chooseNewsong(){
+      allMusic[randomMusic].play();
+    };
     function Room1(event){
       if(window.event.keyCode==13){
        //if you press enter it will play the next if
@@ -1863,9 +1882,98 @@
     module.exports = cheet;
   }
 cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
-    alert('Voilà!');
-    var changeback = document.getElementById('bod').style.backgroundImage = "url('https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg')";
-    clearWav.play();
+    var changeback = document.getElementById('bod').style.backgroundImage = "url('Space.jpg')";
+    music.play();
+   var ChangeTitite= document.getElementById('titleColor').innerHTML = "MrSkam's Palace";
+       if(dud1==0){
+       //if the amount of dudes is less than five add some dudes
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode("MrSkam/guest"+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="170px" ;
+       }
+      else if(dud1==1){
+       //if the amount of dudes is less than five add some dudes
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode("MrSkam/guest"+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="190px" ;
+       }
+      else if(dud1==2){
+       //if the amount of dudes is less than five add some dudes
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode("MrSkam/guest"+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="210px" ;
+       }
+       else if(dud1==3){
+       //if the amount of dudes is less than five add some dudes
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode("MrSkam/guest"+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="230px" ;
+       }
+      else if(dud1==4){
+       //if the amount of dudes is less than five add some dudes
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode("MrSkam/guest"+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="250px" ;
+       }
+       else if(dud1 == 5){
+      var Nu = document.getElementsByTagName('ol')[0].getElementsByTagName('li')[1];
+      //minus 1 from the user input because the userinput will mostlikley be a number since i said it will be
+      dud1-=1;
+      //minus 1 from dud to keep the number stabalized
+      var removeNu = Nu.parentNode;
+      //sets the user Input to removeNu and sets Nu as a parent
+      removeNu.removeChild(Nu);
+      //removes Nu
+      window.alert("Thank you for staying at MrSkams Palace");
+      var changeDiv = document.getElementById('floorOne').style.height = "230px";
+       //if the amount of dudes is less than five add some dudes
+        dud1++;
+       //takes users input
+       var newCustomer = document.createElement('li');
+       var customerName = document.createTextNode("MrSkam/guest"+":Date = "+DATE.getMonth()+", "+DATE.getFullYear()+", "+DATE.getDate()+" Time = "+DATE.getHours()+":"+DATE.getMinutes());
+       newCustomer.appendChild(customerName);
+       var room = document.getElementsByTagName('ol')[0];
+       room.appendChild(newCustomer);
+         window.alert("Thanks for choosing Skam's Palace");
+       //creates room for the customer
+       var divIncrease = document.getElementById('floorOne').style.height ="250px" ;
+               
+       }
 })
 })(this);
 </script>
